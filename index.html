@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta charset="UTF-8">
+  <title>ASNY</title>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-179476825-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-179476825-1');
+</script>
+
+  <!-- Latest compiled and minified CSS & JS -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="https://cdn.glitch.com/0cc91850-cd5e-4827-a102-0ddee1243509%2Flogo.png?v=1601434289758"/>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://code.jquery.com/jquery.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  <link rel="stylesheet" href="font-awesome-animation.min.css">
+
+  <style>
+    .btn-lg {
+    width: 250px;
+    display: inline-block;
+    } 
+
+    @import url('https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+html {
+  margin: 0 !important;
+  padding: 0 !important;  
+}
+body {
+    font-family: 'Roboto Condensed', sans-serif;
+    margin: 0;
+    background: #fff;
+    height: auto;
+}
+
+li a {
+    color: #212529 !important;
+}
+
+a:hover {
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+}
+.nav-wrapper {
+  background: #fff;
+}
+h1 {
+    font-weight: 400;
+    font-size: 2.5rem;
+    margin: 0;
+    margin-bottom: 0.5rem;
+    color: #fff;
+}
+
+h6 {
+    font-weight: 400;
+    font-size: 1.1rem;
+    text-transform: capitalize;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    color:#fff;
+    line-height: 1.5rem;
+}
+
+main {
+    width: 100%;
+    margin: auto;
+    box-shadow: 30px 0px 40px rgba(0,0,0,0.1),
+        -30px 0px 40px rgba(0,0,0,0.1);
+}
+
+
+
+#landing-3 {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  flex: 0 1 60 vw;
+  margin: 0; 
+}
+
+#landing-text {
+    display: flex;
+    height: 50vh;
+    justify-content: center;
+    align-items: center;
+    text-align: center; 
+    padding-right: 1rem;
+    padding-left: 1rem;
+}
+
+#landing-text h2 {
+    color: #888;
+}
+
+
+.btn {
+    padding: 0.5rem 2rem !important;
+    border: 1px #ccc solid !important;
+    display: inline-block !important;
+    border-radius: 50px;
+    text-decoration: none;
+    color: #fff !important;
+    background: transparent !important;
+    transition: background 500ms ease;
+    line-height: 50% !important;
+}
+
+.btn:hover {
+    background: #f4f4f4 !important;
+    color:#000 !important;
+}
+
+.btn:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.learnMorebtn {
+  border-radius: 0px;
+  border: 1px #98A5B5 solid !important;
+  color: #98A5B5 !important;
+}
+
+.learnMorebtn:hover {
+  background-color: #98A5B5 !important;
+  color: #fff !important;
+}
+
+#header {
+    text-align: center;
+    background: #98A5B5;
+    color: #fff;
+}
+
+#header h2 {
+    border-left: dotted 1px #fff;
+    border-right: dotted 1px #fff;
+    display: inline-block;
+    padding-right: 1rem;
+    padding-left: 1rem;
+}
+
+.caption {
+    padding: 0.8rem;
+    text-align: justify;
+}
+
+
+footer {
+    text-align: center;
+    margin: auto;
+    color: #333;
+}
+
+footer h3 {
+    font-size: 3rem;
+    margin-bottom: 0;
+}
+
+@media(min-width: 500px) {
+    #landing {
+        display: flex;
+        height: 100%;
+    }
+
+    #landing-text {
+        height: 100vh;
+    }
+
+}
+
+@media(min-width: 700px) {
+    .btn {
+        padding: 1rem 3rem !important;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+  .btn {
+    line-height: 150% !important;
+  }
+}
+
+
+.mySlides {
+  width: 100%;
+  height: 100vh;
+  background: rgb(50,50,50); 
+  opacity: 1;
+  transition: 0.5s ease;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-position: center top;
+  background-size: cover;
+}
+
+.fadeOut {
+  opacity: 0;
+  z-index: -1;
+}
+
+
+.myDiv {
+ display:flex;
+ align-items:center;
+ justify-content:center;
+}
+
+
+
+  </style>
+</head>
+
+<body>
+
+    <div class="navbar-fixed">
+        <nav class="nav-wrapper">
+          <div class="container">
+              <a href="#" class="brand-logo" id="logo" style="color: #212529; font-size: 1.2rem;"><img style="margin-right: 5px;" width="35px" src="https://cdn.glitch.com/0cc91850-cd5e-4827-a102-0ddee1243509%2Flogo.png?v=1601434289758"></a>
+              <a href="#" class="sidenav-trigger" data-target="mobile-links">
+                  <i class="material-icons" style="color: #212529">menu</i>
+              </a>
+              <ul class="right hide-on-med-and-down">
+                <li class="myNav"><a href="https://www.asnyinc.com/">Home</a></li>
+                <li class="myNav"><a href="https://www.asnyinc.com/service">Services</a></li> 
+                <li class="myNav"><a href="https://www.asnyinc.com/team">Our Team</a></li>
+                <li class="myNav"><a href="https://www.asnyinc.com/client">Clients</a></li> 
+                <li class="myNav"><a href="https://www.asnyinc.com/contact">Contact</a></li> 
+              </ul>
+          </div>
+      </nav>
+    </div>
+      <ul class="sidenav" id="mobile-links">
+        <li><a href="https://www.asnyinc.com/">Home</a></li> 
+        <li><a href="https://www.asnyinc.com/service">Services</a></li> 
+        <li><a href="https://www.asnyinc.com/team">Our Team</a></li>
+        <li><a href="https://www.asnyinc.com/client">Clients</a></li> 
+        <li><a href="https://www.asnyinc.com/contact">Contact</a></li> 
+      </ul>
+
+  <main>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-6 mt-3">
+          <img width="100%" src="https://cdn.glitch.com/d2f9e5f2-6dc7-41e5-b1fe-4e96bab4f457%2Fbg-5.png?v=1612549481619"/>
+        </div>
+      <div class="col-md-6">
+
+      </div>
+
+    </div>
+    </div>
+
+
+
+<div id="aboutus">
+
+  <div class="row justify-content-center">
+ <h6 style="color: #333333; font-weight: 700; font-size: 1.1rem; line-height: 3rem;">Our Mission is, "To ease the burden of accounting, record keeping, and fiscal reporting so that administrators can focus on program achievement."</h6>
+  </div>
+        <div id="header">
+            <h2 style="margin: 1rem 0 1rem 0">About Us</h2>
+        </div>
+
+        <div class="caption">
+          <div class="container-fluid">
+
+
+            <div class="row mt-5">
+
+              <div class="col-md-4 mb-4 text-center faa-parent animated-hover">
+                <i class="fas fa-4x fa-user-tie faa-pulse"></i>
+                <h4 class="text-center" style="font-family: 'Playfair Display', serif;">Who We Are</h4>
+                <p>ASNY is a New York based accounting firm with over a decade of accounting and auditing experience. Founded in 2010, we pride ourselves on our record of consistently providing best solutions to accounting issues our clients face.</p>
+                <a href="https://www.asnyinc.com/team" class="btn learnMorebtn" stlye="height: 20px">Learn More</a>
+              </div>
+
+              <div class="col-md-4 mb-4 text-center faa-parent animated-hover">
+                <i class="fas fa-4x fa-chart-line faa-pulse"></i> 
+                <h4 class="text-center" style="font-family: 'Playfair Display', serif;">What We Do</h4>
+                <p>We offer Bookkeeping, Financial Reporting, Audit Preparation, Budgeting and Forecasting, Accounting Software Setup and Maintenance, Chart of Accounts Design, Chief Financial Officer, Internal Controls Design, and Regulatory Compliance.</p>
+                <a href="#whatweoffer" class="btn learnMorebtn" stlye="height: 20px">Learn More</a>
+              </div>
+
+              <div class="col-md-4 mb-4 text-center faa-parent animated-hover">  
+                <i class="fas fa-4x fa-users faa-pulse"></i>
+                <h4 class="text-center" style="font-family: 'Playfair Display', serif;">Who We Serve</h4>
+                <p>At Accounting Solutions, we focus on meeting the needs of nonprofit organizations and charter schools. We offer services on a full-time or part-time basis and empower clients with the financial tools needed to make the right decisions.</p>
+                <a href="https://www.asnyinc.com/service" class="btn learnMorebtn" stlye="height: 20px">Learn More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+  </div>
+
+      <div id="whatweoffer">
+        <div id="header">
+          <h2 style="margin: 1rem 0 1rem 0">What We Offer</h2>
+      </div>
+        <div class="container-fluid p-0 mb-5"> 
+ 
+            <div class="row mt-4">
+                <div class="col-sm-4 text-center faa-parent animated-hover">
+                  <i class="fas fa-4x fa-laptop faa-pulse"></i>
+                  <p class="mt-3">Bookkeeping</p>
+                </div>
+      
+        
+                <div class="col-sm-4 text-center faa-parent animated-hover">
+                  <i class="far fa-4x fa-newspaper faa-horizontal"></i>
+                  <p class="mt-3">Financial Reporting</p>
+                </div>
+
+                <div class="col-sm-4 text-center faa-parent animated-hover">
+        
+                  <i class="far fa-4x fa-calendar-check faa-float"></i>
+                  <p class="mt-3">Audit Preparation</p>
+                </div>
+              </div>
+
+              <div class="row mt-1 pt-1">
+                <div class="col-sm-4 text-center faa-parent animated-hover">
+                  <i class="fas fa-4x fa-poll faa-shake"></i>
+        
+                  <p class="mt-3">Budgeting and Forecasting</p>
+                </div>
+        
+                <div class="col-sm-4 text-center faa-parent animated-hover"> 
+                  <i class="fas fa-4x fa-cogs faa-tada"></i>
+                  <p class="mt-3">Accounting Software Setup and Maintenance</p>
+                </div>
+        
+                <div class="col-sm-4 text-center faa-parent animated-hover">
+                  <i class="fas fa-4x fa-pen-square faa-spin"></i> 
+                  <p class="mt-3">Chart of Accounts Design</p>
+                </div>
+              </div>
+
+              <div class="row mt-1 pt-1 pb-4">
+                <div class="col-sm-4 text-center faa-parent animated-hover">
+                  <i class="fas fa-4x fa-calculator faa-ring"></i>
+                  <p class="mt-3">Chief Financial Officer</p>
+                </div>
+        
+                <div class="col-sm-4 text-center faa-parent animated-hover"> 
+                  <i class="fas fa-4x fa-user-shield faa-pulse"></i>
+                  <p class="mt-3">Internal Controls Design</p>
+                </div>
+        
+                <div class="col-sm-4 text-center faa-parent animated-hover">
+                  <i class="fas fa-4x fa-gavel faa-spin"></i>
+                  <p class="mt-3">Regulatory Compliance</p>
+                </div>
+              </div>
+
+          </div>
+        </div> 
+    </div>
+</main>
+  <footer class="pb-4">
+    <h3 style="margin:0px">Get In Touch</h3>
+    <p>Email or call us to schedule an appointment</p>
+    <p>Email: <strong>dbahl@asnyinc.com</strong></p>
+    <p>Phone: <strong>917-620-9702</strong></p>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+ <script>
+       $(document).ready(function(){
+      $('.sidenav').sidenav();
+  }); 
+
+
+  var carousel = {
+  target: ".mySlides",
+  autoPlay: true,
+  currentIndex: 0,
+  length: null,
+  slideChangeSpeed: 3000,
+  changeSlide: function() {
+    var target = document.querySelectorAll(this.target);
+    var targetLength = target.length;
+    this.length = target.length;
+    for (var i = 0; i < targetLength; i++) {
+      target[i].classList.add("fadeOut"); // hide all elements
+
+      if (i == this.currentIndex) {
+        target[i].classList.remove("fadeOut"); // remove the hidden class (showing the current index item)
+      }
+    }
+    this.updateIndex(); // update the slide index 
+  },
+  updateIndex: function() {
+    this.currentIndex >= this.length - 1 ? (this.currentIndex = 0) : (this.currentIndex = this.currentIndex + 1);
+  }
+};
+
+// initial run
+carousel.changeSlide();
+
+
+// continous setInterval if carousel is set to autoplay
+if (carousel.autoPlay) {
+  setInterval(function() {
+    carousel.changeSlide();
+  }, carousel.slideChangeSpeed);
+}
+
+
+
+ </script>
+</body>
+
+</html>

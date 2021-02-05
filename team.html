@@ -1,0 +1,755 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta charset="UTF-8">
+  <title>ASNY</title>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-179476825-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-179476825-1');
+</script>
+  <!-- Latest compiled and minified CSS & JS -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="https://cdn.glitch.com/0cc91850-cd5e-4827-a102-0ddee1243509%2Flogo.png?v=1601434289758"/>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://code.jquery.com/jquery.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  <link rel="stylesheet" href="font-awesome-animation.min.css">
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+
+  <style>
+    .btn-lg {
+    width: 250px;
+    display: inline-block;
+    } 
+
+    @import url('https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap');
+
+html {
+  margin: 0 !important;
+  padding: 0 !important;  
+}
+body {
+    font-family: 'Roboto Condensed', sans-serif;
+    margin: 0;
+    background: #eee;
+    height: auto;
+}
+
+li a {
+    color: #212529 !important;
+}
+
+a:hover {
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+}
+.nav-wrapper {
+  background: #eeeeee;
+}
+h1 {
+    font-weight: 400;
+    font-size: 2.5rem;
+    margin: 0;
+    margin-bottom: 0.5rem;
+    color: #fff;
+}
+
+h6 {
+    font-weight: 400;
+    font-size: 1.1rem;
+    text-transform: capitalize;
+    margin: 0;
+    color:#fff;
+    line-height: 1.5rem;
+}
+
+main {
+    /* max-width: 1000px; */
+    width: 100%;
+    margin: auto;
+    box-shadow: 30px 0px 40px rgba(0,0,0,0.1),
+        -30px 0px 40px rgba(0,0,0,0.1);
+}
+
+
+
+
+
+#header {
+    text-align: center;
+    background: #333;
+    color: #fff;
+}
+
+#header h2 {
+    border-left: dotted 1px #fff;
+    border-right: dotted 1px #fff;
+    display: inline-block;
+    padding-right: 1rem;
+    padding-left: 1rem;
+}
+
+.caption {
+    padding: 0.8rem;
+    text-align: justify;
+}
+
+
+footer {
+    text-align: center;
+    margin: auto;
+    color: #333;
+}
+
+footer h3 {
+    font-size: 3rem;
+    margin-bottom: 0;
+}
+
+.abouthero{
+    position:relative;
+    height:45vh !important;
+    width:100%;
+    height:100%;
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('https://cdn.glitch.com/cd99f035-ecbc-4ddd-9a8c-d2f6b5fff534%2Fabout.jpeg?v=1598217464817');
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position: center top;
+    z-index: -1;
+  }
+
+  #exTab2 .nav-pills > li > a {
+  border-radius: 4px 4px 0 0 ;
+}
+
+
+.text-center {
+  text-align: center;
+}
+
+
+.team-member, .team-member .team-img {
+  position: relative;
+}
+.team-member {
+  overflow: hidden;
+}
+.team-member, .team-member .team-img {
+  position: relative;
+}
+
+
+
+.team-hover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: 0;
+  border: 20px solid rgba(0, 0, 0, 0.1);
+  background-color: rgba(255, 255, 255, 0.90);
+  opacity: 0;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.team-member:hover .team-hover .desk {
+  top: 35%;
+}
+.team-member:hover .team-hover, .team-member:hover .team-hover .desk, .team-member:hover .team-hover .s-link {
+  opacity: 1;
+}
+.team-hover .desk {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  opacity: 0;
+  -webkit-transform: translateY(-35%);
+  -ms-transform: translateY(-35%);
+  transform: translateY(-35%);
+  -webkit-transition: all 0.3s 0.2s;
+  transition: all 0.3s 0.2s;
+  padding: 0 20px;
+}
+.desk, .desk h4, .team-hover .s-link a {
+  text-align: center;
+  color: #222;
+}
+.team-member:hover .team-hover .s-link {
+  bottom: 10%;
+}
+.team-member:hover .team-hover, .team-member:hover .team-hover .desk, .team-member:hover .team-hover .s-link {
+  opacity: 1;
+}
+.team-hover .s-link {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  opacity: 0;
+  text-align: center;
+  -webkit-transform: translateY(45%);
+  -ms-transform: translateY(45%);
+  transform: translateY(45%);
+  -webkit-transition: all 0.3s 0.2s;
+  transition: all 0.3s 0.2s;
+  font-size: 35px;
+}
+.desk, .desk h4, .team-hover .s-link a {
+  text-align: center;
+  color: #222;
+}
+.team-member .s-link a {
+  margin: 0 10px;
+  color: #333;
+  font-size: 16px;
+}
+.team-title {
+  position: static;
+  padding: 20px 0;
+  display: inline-block;
+  letter-spacing: 2px;
+  width: 100%;
+}
+.team-title h5 {
+  margin-bottom: 0px;
+  display: block;
+  text-transform: uppercase;
+}
+.team-title span {
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #a5a5a5;
+  letter-spacing: 1px;
+}
+
+
+
+@media(min-width: 700px) {
+    .btn {
+        padding: 1rem 3rem !important;
+    }
+}
+  </style>
+</head>
+
+<body>
+
+    <div class="navbar-fixed">
+        <nav class="nav-wrapper">
+          <div class="container">
+              <a href="#" class="brand-logo" id="logo" style="color: #212529; font-size: 1.2rem;"><img style="margin-right: 5px;" width="35px" src="https://cdn.glitch.com/0cc91850-cd5e-4827-a102-0ddee1243509%2Flogo.png?v=1601434289758"></a>
+              <a href="#" class="sidenav-trigger" data-target="mobile-links">
+                  <i class="material-icons" style="color: #212529">menu</i>
+              </a>
+              <ul class="right hide-on-med-and-down"> 
+                <li class="myNav"><a href="https://www.asnyinc.com/">Home</a></li>
+                <li class="myNav"><a href="https://www.asnyinc.com/service">Services</a></li>
+                <li class="myNav"><a href="https://www.asnyinc.com/team">Our Team</a></li>
+                <li class="myNav"><a href="https://www.asnyinc.com/client">Clients</a></li> 
+                <li class="myNav"><a href="https://www.asnyinc.com/contact">Contact</a></li> 
+              </ul>
+          </div>
+      </nav>
+    </div>
+      <ul class="sidenav" id="mobile-links">
+        <li><a href="https://www.asnyinc.com/">Home</a></li> 
+        <li><a href="https://www.asnyinc.com/service">Services</a></li> 
+        <li><a href="https://www.asnyinc.com/team">Our Team</a></li>
+        <li><a href="https://www.asnyinc.com/client">Clients</a></li> 
+        <li><a href="https://www.asnyinc.com/contact">Contact</a></li> 
+      </ul>
+
+  <main>
+    <!-- Landing Area -->
+
+      
+    <div class="abouthero">
+        <div class="container-fluid">
+                <div class="row text-center justify-content-center mb-0 pb-4 pt-5">
+               
+                <h3 class="caption" style="line-height: 2.3em; font-weight: 500;color: #eee;">ABOUT US</h3>
+      
+            </div>
+      </div>
+      </div>
+      
+
+
+
+        <div class="row">
+
+            <div class="col-md-12 caption">
+
+                <div id="header">
+                    <h5 style="padding-top: 1rem;">WHO WE ARE</h5>
+                    <hr/>
+                </div>
+                <div class="container-fluid">
+                At Accounting Solutions(ASNY), we believe that a firm is as good as the people who work in it. We feel good about those who have joined us to help us execute our mission. ASNY is comprised of 17 professionals and serves over 50 organizations and schools.<br/><br/>
+
+                Our staff, whom we fondly refer to as “<li style="display: inline;"><a class="effect-underline" target="_blank" href="#solutionist"><b>Solutionists</b></a></li>,” include accounting and finance professionals with many years of experience who are dedicated to serving nonprofits and charter schools. A significant number have worked exclusively in the nonprofit sector throughout their careers and have been with ASNY for a number of years. This wealth of experience and dedication to the nonprofit sector allow us to say, with confidence, that we understand how nonprofits and charter schools work and we know what their needs are.
+              </div>
+              </div> 
+        
+        </div>
+
+        <div class="row" id="solutionist">
+            <div class="col-md-12 caption">
+
+                <div id="header">
+                    <h5 style="padding-top: 1rem;">Meet Your Solutionists</h5>
+                    <hr/>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid">
+            <div class="row mt-4 pt-4">
+              <div class="col-md-4 col-sm-4">
+                <div class="card">
+                <div class="team-member"  style="height: 350px;">
+                    <div class="team-img">
+                        <img width="100%" src="https://cdn.glitch.com/0cc91850-cd5e-4827-a102-0ddee1243509%2FMonita.jpg?v=1599227251056" alt="team member" class="img-responsive">
+                    </div>
+                    <div class="team-hover">
+                        <div class="desk">
+                            <p>Monita manages a portfolio that includes both charter schools and nonprofit organizations. Monita provides Controller level services to her clients, which include accounting, financial reporting, cash management and the installation of best practices policies and procedures.
+                              </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="team-title text-center">
+                    <h6 style="color: #212529">Monita Nhem, M.B.A</h6>
+                    <span>Vice President</span>
+                </div>
+              </div>
+            </div>
+                <div class="col-md-4 col-sm-4">
+                  <div class="card">
+                    <div class="team-member" style="height: 350px;">
+                        <div class="team-img">
+                            <img width="100%" src="https://cdn.glitch.com/e7ec1ecc-8235-4381-8966-9202576ad0f6%2FDigant.jpg?v=1598374860924" alt="team member" class="img-responsive">
+                        </div>
+                        <div class="team-hover">
+                            <div class="desk">
+                                <p>Digant founded Accounting Solutions in 2010.
+        
+                                  Digant has more than a decade of experience providing accounting and attest services.
+                                  
+                                  He recently serves on the board of the Manhattan Chapter of the New York State Society of CPA's.
+                                  </p>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="team-title text-center">
+                        <h6 style="color: #212529">Digant Bahl CPA,CGMA</h6>
+                        <span>Founder & President</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 col-sm-4">
+                  <div class="card">
+                  <div class="team-member" style="height: 350px;">
+                      <div class="team-img">
+                          <img width="100%" src="https://cdn.glitch.com/0cc91850-cd5e-4827-a102-0ddee1243509%2Fzaid.jpg?v=1599227390122" alt="team member" class="img-responsive">
+                      </div>
+                      <div class="team-hover">
+                          <div class="desk">
+                              <p>Zaid has over 30 years of accounting experience in the profit and nonprofit sectors, starting his career at Ernst & Whinney (now Ernst & Young). Zaid is fluent in many accounting software packages, including QuickBooks, Fund E-Z, SAGE/MIP and Blackbaud’s Financial Edge.
+                                </p>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="team-title text-center">
+                      <h6 style="color: #212529">Zaid Mohammed, CPA, CGMA</h6>
+                      <span>Chief Operating Officer</span>
+                  </div>
+                </div>
+              </div>
+        
+            </div>
+        
+        
+            <div class="row mt-4 pt-4">
+              <div class="col-md-4 col-sm-4">
+              <div class="card">
+                <div class="team-member"  style="height: 350px;">
+                    <div class="team-img">
+                        <img width="100%" src="https://cdn.glitch.com/0cc91850-cd5e-4827-a102-0ddee1243509%2FJuned.jpg?v=1599228834784" alt="team member" class="img-responsive">
+                    </div>
+                    <div class="team-hover">
+                        <div class="desk">
+                            <p>Juned manages a portfolio of five Charter Schools providing CFO and Controller level services. He and his team provide a myriad of services to the clients including bookkeeping, financial reporting, budgeting, forecasting, accounts payable payroll, monthly closing procedures and cash management. 
+                                             
+                              </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="team-title text-center">
+                    <h6 style="color: #212529">Juned Haque, M.S</h6>
+                    <span>Accounting Manager</span>
+                </div>
+              </div>
+            </div>
+                <div class="col-md-4 col-sm-4">
+                  <div class="card">
+                    <div class="team-member" style="height: 350px;">
+                        <div class="team-img">
+                            <img width="100%" src="https://cdn.glitch.com/0cc91850-cd5e-4827-a102-0ddee1243509%2FGagan.jpg?v=1599228932355" alt="team member" class="img-responsive">
+                        </div>
+                        <div class="team-hover">
+                            <div class="desk">
+                                <p>Gagan manages a portfolio that includes both charter schools and nonprofit organizations. Gagan provides Controller level services to his clients, which include but are not limited to, accounting, financial reporting, cash management and the installation of best practices policies and procedures.
+        
+                                
+                                  </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="team-title text-center">
+                        <h6 style="color: #212529">Gagan Sembhi, B.Sc</h6>
+                        <span>Accounting Manager</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 col-sm-4">
+                  <div class="card">
+                  <div class="team-member" style="height: 350px;">
+                      <div class="team-img">
+                          <img width="100%" src="https://cdn.glitch.com/0cc91850-cd5e-4827-a102-0ddee1243509%2FUsman.jpg?v=1599229044842" alt="team member" class="img-responsive">
+                      </div>
+                      <div class="team-hover">
+                          <div class="desk">
+                              <p>Usman supports clients with accounting, finance and operations related functions, including financial reporting, payroll, accounts payable, reporting of monthly cash-flows, and audit preparation. Usman has extensive knowledge of nonprofit best practices and regulations and frequently serves as an advisor to clients on such matters.
+        
+                                       
+                                </p>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="team-title text-center">
+                      <h6 style="color: #212529">Usman Choudhary</h6>
+                      <span>Senior Associate</span>
+                  </div>
+                </div>
+              </div>
+        
+            </div>
+        
+        
+            <div class="row mt-4 pt-4">
+              <div class="col-md-4 col-sm-4">
+                <div class="card">
+                <div class="team-member"  style="height: 350px;">
+                    <div class="team-img">
+                        <img width="100%" src="https://cdn.glitch.com/0cc91850-cd5e-4827-a102-0ddee1243509%2Fzakaria.jpg?v=1599230878880" alt="team member" class="img-responsive">
+                    </div>
+                    <div class="team-hover">
+                        <div class="desk">
+                            <p>Zakaria works with both charter schools and nonprofit organizations and supports his clients with a variety of accounting and operations related functions, including, bookkeeping, monthly closings, accounts payable, financial reporting, payroll and audit preparation.
+                            
+                              </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="team-title text-center">
+                    <h6 style="color: #212529">Zakaria Haque</h6>
+                    <span>Senior Associate</span>
+                </div>
+              </div>
+            </div>
+                <div class="col-md-4 col-sm-4">
+                  <div class="card">
+                    <div class="team-member" style="height: 350px;">
+                        <div class="team-img">
+                            <img width="100%" src="https://cdn.glitch.com/e7ec1ecc-8235-4381-8966-9202576ad0f6%2Funnamed%20(1).jpg?v=1598414749696" alt="team member" class="img-responsive">
+                        </div>
+                        <div class="team-hover">
+                            <div class="desk">
+                                <p>Xiaodan joined Accounting Solutions in 2018 and is an Accounting Associate. She works with nonprofit organizations and supports her clients with accounting services, including bookkeeping, month-end closing, accounts payable, payroll, audit preparation, cash flow management, and other related work.
+                                  Xiaodan holds a Master of Science in Accounting.                                                           
+                                  </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="team-title text-center">
+                        <h6 style="color: #212529">Xiaodan Li</h6>
+                        <span>Senior Associate</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 col-sm-4">
+                  <div class="card">
+                  <div class="team-member" style="height: 350px;">
+                      <div class="team-img">
+                          <img width="100%" src="https://cdn.glitch.com/0cc91850-cd5e-4827-a102-0ddee1243509%2Fsandy.jpg?v=1600293423578" alt="team member" class="img-responsive">
+                      </div>
+                      <div class="team-hover">
+                          <div class="desk">
+                              <p>Sandy joined Accounting Solutions in 2010 as an Accounting Associate. He works with both charter schools and nonprofit organizations providing support to clients in a number of areas including bookkeeping, monthly closings, accounts payable, payroll, and audit preparation.
+
+                                Sandy holds a Master of Commerce degree from Gharwal University, India. 
+                                
+                                </p>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="team-title text-center">
+                      <h6 style="color: #212529">Sandy Sandal</h6>
+                      <span>Senior Associate</span>
+                  </div>
+                </div>
+              </div>
+        
+            </div>
+        
+        
+        
+            <div class="row mt-4 pt-4">
+              <div class="col-md-4 col-sm-4">
+                <div class="card">
+                <div class="team-member"  style="height: 350px;">
+                    <div class="team-img">
+                        <img width="100%" src="https://cdn.glitch.com/0cc91850-cd5e-4827-a102-0ddee1243509%2Fxiaodan.jpg?v=1600293519328" alt="team member" class="img-responsive">
+                    </div>
+                    <div class="team-hover">
+                        <div class="desk">
+                            <p>Xiaodan works with nonprofit organizations and supports her clients with accounting services, including bookkeeping, month-end closing, accounts payable, payroll, audit preparation, cash flow management and other related work.
+                              </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="team-title text-center">
+                    <h6 style="color: #212529">Xiaodan Wang</h6>
+                    <span>Associate Solutionist</span>
+                </div>
+              </div>
+            </div>
+                <div class="col-md-4 col-sm-4">
+                  <div class="card">
+                    <div class="team-member" style="height: 350px;">
+                        <div class="team-img">
+                            <img width="100%" src="https://cdn.glitch.com/0cc91850-cd5e-4827-a102-0ddee1243509%2Fjoyce.jpg?v=1600293627544" alt="team member" class="img-responsive">
+                        </div>
+                        <div class="team-hover">
+                            <div class="desk">
+                                <p>Joyce graduated from NYIT with an M.B.A in Accounting. She provides clients with services like bookkeeping, bank reconciliation, payroll, audit preparation, and related works. Joyce is CPA eligible and will be sitting for the exams in the near future.
+                                  </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="team-title text-center">
+                        <h6 style="color: #212529">Joyce Lam, M.B.A</h6> 
+                        <span>Associate Solutionist</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 col-sm-4">
+                  <div class="card">
+                  <div class="team-member" style="height: 350px;">
+                      <div class="team-img">
+                          <img width="100%" src="https://cdn.glitch.com/0cc91850-cd5e-4827-a102-0ddee1243509%2Fchand.jpg?v=1600293742210" alt="team member" class="img-responsive">
+                      </div>
+                      <div class="team-hover">
+                          <div class="desk">
+                              <p>Chandsy is pursuing Masters in Finance at Baruch College. A Chartered Accountant (Indian CPA), supports clients with services like accounts payable, bookkeeping, month-end closing, payroll and any other related work. 
+                                </p>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="team-title text-center">
+                      <h6 style="color: #212529">Chandsy Goyal</h6>
+                      <span>Associate Solutionist</span> 
+                  </div>
+                </div>
+              </div>
+        
+            </div>
+        
+        
+            <div class="row mt-4 pt-4">
+              <div class="col-md-4 col-sm-4">
+              <div class="card">
+                <div class="team-member"  style="height: 350px;">
+                    <div class="team-img">
+                        <img width="100%" src="https://cdn.glitch.com/0cc91850-cd5e-4827-a102-0ddee1243509%2Fyumin.jpg?v=1600293843534" alt="team member" class="img-responsive">
+                    </div>
+                    <div class="team-hover">
+                        <div class="desk">
+                            <p>Yumin joined Accounting Solutions in 2018 as an Accounting Associate. She works with both charter schools and nonprofit organizations and supports her clients with a variety of accounting functions, including, bookkeeping, monthly closings, accounts payable, financial reporting, payroll, and audit preparation.
+
+                              Yumin holds a Bachelor of Science degree in Finance and an MBA in Accounting.
+                                                          
+                              </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="team-title text-center">
+                    <h6 style="color: #212529">Yumin Qiu</h6>
+                    <span>Associate Solutionist</span>
+                </div>
+              </div>
+            </div>
+                <div class="col-md-4 col-sm-4">
+
+
+                  <div class="card">
+                    <div class="team-member"  style="height: 350px;">
+                        <div class="team-img">
+                            <img width="100%" src="https://cdn.glitch.com/0cc91850-cd5e-4827-a102-0ddee1243509%2FRakesh_Khanna_white.png?v=1600631894826" alt="team member" class="img-responsive">
+                        </div>
+                        <div class="team-hover">
+                            <div class="desk">
+                                <p>Rakesh joined Accounting Solutions in 2020 as an Accounting Associate. He supports both nonprofit organizations and charter schools with a variety of bookkeeping and accounting services including monthly closing procedures, accounts payable, and recording transactions relating to payroll, income, and expenses. Having previously worked in the IT field, he brings to the firm strong technology skills.
+  
+                                  Rakesh holds a Bachelor of Technology in Mechanical Engineering and will graduate with an MBA in Finance in May 2021.
+                                  </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="team-title text-center">
+                        <h6 style="color: #212529">Rakesh Khanna</h6> 
+                        <span>Associate Solutionist</span>
+                    </div>
+                  </div>
+
+                </div>
+                <div class="col-md-4 col-sm-4">
+                  <div class="card">
+                  <div class="team-member" style="height: 350px;">
+                      <div class="team-img">
+                          <img width="100%" src="https://cdn.glitch.com/0cc91850-cd5e-4827-a102-0ddee1243509%2Fandy.jpg?v=1600294154521" alt="team member" class="img-responsive">
+                      </div>
+                      <div class="team-hover">
+                          <div class="desk">
+                              <p>Andy graduated from Baruch College with a Master of Science degree in Accounting. Andy provides clients with financial services such as bookkeeping, full-cycle AP, and audit preparation. Andy is CPA eligible and will be sitting for the exams in the near future.
+                                </p>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="team-title text-center">
+                      <h6 style="color: #212529">Andy Liu</h6>
+                      <span>Associate Solutionist</span> 
+                  </div>
+                </div>
+              </div>
+        
+            </div>
+
+
+            <div class="row mt-4 pt-4">
+              <div class="col-md-4 col-sm-4">
+                <div class="card">
+                  <div class="team-member" style="height: 350px;">
+                      <div class="team-img">
+                          <img width="100%" src="https://cdn.glitch.com/0cc91850-cd5e-4827-a102-0ddee1243509%2FM.jpg?v=1601512899791" alt="team member" class="img-responsive">
+                      </div>
+                      <div class="team-hover">
+                          <div class="desk">
+                              <p>Manali Shah graduated from NYIT with a degree in Finance. Manali provides clients with financial services such as bookkeeping, bank reconciliation and audit preparation. 
+                                </p>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="team-title text-center">
+                      <h6 style="color: #212529">Manali Shah</h6> 
+                      <span>Associate Solutionist</span>
+                  </div>
+                </div>
+            </div>
+                <div class="col-md-4 col-sm-4">
+                 <div class="card">
+                    <div class="team-member" style="height: 350px;">
+                        <div class="team-img">
+                            <img width="100%" src="https://cdn.glitch.com/0cc91850-cd5e-4827-a102-0ddee1243509%2F0.jpg?v=1600632056985" alt="team member" class="img-responsive">
+                        </div>
+                        <div class="team-hover"> 
+                            <div class="desk">
+                                <p>Phoebe Yaheng Wu graduated from Baruch College with a Master of Science degree in Information Systems. Phoebe provides clients with financial services such as bookkeeping, bank reconciliation and audit preparation. Phoebe has passed the CPA exams and is currently working towards licensure. 
+                                  </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="team-title text-center">
+                        <h6 style="color: #212529">Phoebe Yaheng Wu</h6>
+                        <span>Associate Solutionist</span>
+                    </div>
+                  </div> 
+                </div>
+                <div class="col-md-4 col-sm-4">
+                  <!-- <div class="card">
+                  <div class="team-member" style="height: 350px;">
+                      <div class="team-img">
+                          <img width="100%" src="https://cdn.glitch.com/0cc91850-cd5e-4827-a102-0ddee1243509%2Fandy.jpg?v=1600294154521" alt="team member" class="img-responsive">
+                      </div>
+                      <div class="team-hover">
+                          <div class="desk">
+                              <p>Andy graduated from Baruch College with a Master of Science degree in Accounting. Andy provides clients with financial services such as bookkeeping, full-cycle AP, and audit preparation. Andy is CPA eligible and will be sitting for the exams in the near future.
+                                </p>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="team-title text-center">
+                      <h6 style="color: #212529">Andy Liu</h6>
+                      <span>Associate Solutionist</span> 
+                  </div>
+                </div> -->
+              </div>
+        
+            </div>
+
+
+
+        
+        </div>
+
+ 
+    
+</main>
+
+
+
+
+
+
+  <footer class="pb-4">
+    <h3 style="margin:0px">Get In Touch</h3>
+    <p>Email or call us to schedule an appointment</p>
+    <p>Email: <strong>dbahl@asnyinc.com</strong></p>
+    <p>Phone: <strong>917-620-9702</strong></p>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+ <script>
+       $(document).ready(function(){
+      $('.sidenav').sidenav();
+  });
+
+ </script>
+</body>
+
+</html>

@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta charset="UTF-8">
+  <title>ASNY</title> 
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-179476825-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-179476825-1');
+</script>
+
+  <!-- Latest compiled and minified CSS & JS -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="https://cdn.glitch.com/0cc91850-cd5e-4827-a102-0ddee1243509%2Flogo.png?v=1601434289758"/>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://code.jquery.com/jquery.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  <link rel="stylesheet" href="font-awesome-animation.min.css">
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+ 
+  <style>
+    .btn-lg {
+    width: 250px;
+    display: inline-block;
+    } 
+
+    @import url('https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap');
+
+html {
+  margin: 0 !important;
+  padding: 0 !important;  
+}
+body {
+    font-family: 'Roboto Condensed', sans-serif;
+    margin: 0;
+    background: #eee;
+    height: auto;
+}
+
+li a {
+    color: #212529 !important;
+}
+
+a:hover {
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+}
+.nav-wrapper {
+  background: #eeeeee;
+}
+h1 {
+    font-weight: 400;
+    font-size: 2.5rem;
+    margin: 0;
+    margin-bottom: 0.5rem;
+    color: #fff;
+}
+
+h6 {
+    font-weight: 400;
+    font-size: 1.1rem;
+    text-transform: capitalize;
+    margin: 0;
+    color:#fff;
+    line-height: 1.5rem;
+}
+
+main {
+    /* max-width: 1000px; */
+    width: 100%; 
+    margin: auto;
+    box-shadow: 30px 0px 40px rgba(0,0,0,0.1),
+        -30px 0px 40px rgba(0,0,0,0.1);
+}
+
+
+
+
+
+#header {
+    text-align: center;
+    background: #333;
+    color: #fff;
+}
+
+#header h2 {
+    border-left: dotted 1px #fff;
+    border-right: dotted 1px #fff;
+    display: inline-block;
+    padding-right: 1rem;
+    padding-left: 1rem;
+}
+
+.caption {
+    padding: 0.8rem;
+    text-align: justify;
+}
+
+
+footer {
+    text-align: center;
+    margin: auto;
+    color: #333;
+}
+
+footer h3 {
+    font-size: 3rem;
+    margin-bottom: 0;
+}
+
+.servicehero{
+    position:relative;
+    height:45vh !important;
+    width:100%;
+    height:100%;
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('https://cdn.glitch.com/e7ec1ecc-8235-4381-8966-9202576ad0f6%2Fservice.jpeg?v=1598296190289');
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position: center top;
+    z-index: -1;
+  }
+
+  #exTab2 .nav-pills > li > a {
+  border-radius: 4px 4px 0 0 ;
+}
+
+
+.clienthero{
+    position:relative;
+    height:45vh !important;
+    width:100%;
+    height:100%;
+    background: linear-gradient( rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1) ), url('https://cdn.glitch.com/cd99f035-ecbc-4ddd-9a8c-d2f6b5fff534%2Fclient.jpeg?v=1598218754042');
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position: center center;
+    z-index: -1;
+  }
+  
+  li a {
+    text-decoration: none;
+    display: inline-block;
+    position: relative;
+  }
+  
+  /*effect-underline*/
+  a.effect-underline:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    display: inline-block;
+    height: 1em;
+    width: 100%;
+    border-bottom: 1.5px solid;
+    margin-top: 10px;
+    opacity: 0;
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s;
+    -webkit-transform: scale(0,1);
+    transform: scale(0,1);
+  }
+  
+  a.effect-underline:hover:after {
+    opacity: 1;
+      -webkit-transform: scale(1);
+      transform: scale(1);
+  }
+
+  li a:hover {
+      color: #212529;
+  }
+
+.clientList {
+  padding-left: 3rem !important;
+  margin-left: 3rem !important;
+}
+
+  @media only screen and (max-width: 768px) {
+    .clientList {
+        padding-left: 0 !important;
+        margin-left: 0 !important;
+    }
+  }
+
+
+@media(min-width: 700px) {
+    .btn {
+        padding: 1rem 3rem !important;
+    }
+}
+  </style>
+</head>
+
+<body>
+
+    <div class="navbar-fixed">
+        <nav class="nav-wrapper">
+          <div class="container">
+              <a href="#" class="brand-logo" id="logo" style="color: #212529; font-size: 1.2rem;"><img style="margin-right: 5px;" width="35px" src="https://cdn.glitch.com/0cc91850-cd5e-4827-a102-0ddee1243509%2Flogo.png?v=1601434289758"></a>
+              <a href="#" class="sidenav-trigger" data-target="mobile-links">
+                  <i class="material-icons" style="color: #212529">menu</i>
+              </a>
+              <ul class="right hide-on-med-and-down">
+                <li class="myNav"><a href="https://www.asnyinc.com/">Home</a></li> 
+                <li class="myNav"><a href="https://www.asnyinc.com/service">Services</a></li>
+                <li class="myNav"><a href="https://www.asnyinc.com/team">Our Team</a></li>
+                <li class="myNav"><a href="https://www.asnyinc.com/client">Clients</a></li> 
+                <li class="myNav"><a href="https://www.asnyinc.com/contact">Contact</a></li> 
+              </ul>
+          </div>
+      </nav>
+    </div>
+      <ul class="sidenav" id="mobile-links">
+        <li><a href="https://www.asnyinc.com/">Home</a></li>
+        <li><a href="https://www.asnyinc.com/service">Services</a></li> 
+        <li><a href="https://www.asnyinc.com/team">Our Team</a></li>
+        <li><a href="https://www.asnyinc.com/client">Clients</a></li> 
+        <li><a href="https://www.asnyinc.com/contact">Contact</a></li>  
+      </ul>
+
+  <main>
+    <!-- Landing Area -->
+
+      
+
+    <div class="clienthero">
+        <div class="container-fluid">
+                <div class="row text-center justify-content-center mb-0 pb-4 pt-5">
+               
+                <h3 class="caption" style="line-height: 2.3em; font-weight: 500;color: #eee;">CLIENTS</h3>
+      
+            </div>
+      </div>
+      </div>
+
+      <div class="col-md-12">
+        <div id="header">
+          <h5 style="padding-top: 1rem;">Current Client List</h5>
+          <hr/>
+      </div>
+    </div>
+      
+    <div class="container">
+      <div class="row mt-5">
+        <div class="col-md-6">
+    
+          <ul>
+            <li><a class="effect-underline" target="_blank" href="https://www.academyofthecity.org/">Academy of the City Charter Schools</a></li><br/>
+            <li><a class="effect-underline" target="_blank" href="https://www.theamericandreamschool.org/">American Dream Charter School</a></li><br/>
+            <li><a class="effect-underline" target="_blank" href="https://www.bugsbrooklyn.org/">Brooklyn Urban Garden Charter School</a></li><br/>
+            <li><a class="effect-underline" target="_blank" href="http://www.ndchsbrooklyn.org/">New Dawn Charter High Schools</a></li><br/>
+            <li><a class="effect-underline" target="_blank" href="https://sbecacs.org/">South Bronx Early College Academy Charter School</a></li><br/>
+            <li><a class="effect-underline" target="_blank" href="http://www.283adams.org/">Adams Street Foundation</a></li><br/>
+            <li><a class="effect-underline" target="_blank" href="https://www.americanturkishsociety.org/">American Turkish Society</a></li><br/>
+            <li><a class="effect-underline" target="_blank" href="https://www.centralamericanlegal.info/">Central American Legal Assistance</a></li><br/>
+            <li><a class="effect-underline" target="_blank" href="https://www.c3s.nyc/">Coalition of Community Charter Schools</a></li><br/>
+            <li><a class="effect-underline" target="_blank" href="https://www.clmp.org/">Community of Literary Magazines and Presses</a></li><br/>
+            <li><a class="effect-underline" target="_blank" href="https://www.endofound.org/">Endometriosis Foundation of America</a></li><br/>
+            <li><a class="effect-underline" target="_blank" href="http://www.gamesforchange.org/">Games for Change</a></li><br/>
+  
+          </ul>
+    
+        </div>
+    
+        <div class="col-md-6"> 
+    
+          <ul class="clientList">
+            <li><a class="effect-underline" target="_blank" href="https://greatnonprofits.org/org/absolute-return-for-kids-us-inc">Absolute Return on Kids US</a></li><br/>
+            <li><a class="effect-underline" target="_blank" href="https://bka.org/">Brooklyn Legal Services Corporation</a></li><br/>
+            <li><a class="effect-underline" target="_blank" href="https://readalliance.org/">READ Alliance Inc</a></li><br/>
+            <li><a class="effect-underline" target="_blank" href="https://rockarch.org/">Rockefeller Archive Society</a></li><br/>
+            <li><a class="effect-underline" target="_blank" href="https://www.womenssportsfoundation.org/">Women's Sports Foundation</a></li><br/>  
+            <li><a class="effect-underline" target="_blank" href="https://www.charitynavigator.org/ein/201919394">American Friends of Shavei Yisrael Inc</a></li><br/>  
+            <li><a class="effect-underline" target="_blank" href="https://volsprobono.org/">Volunteers of Legal Service</a></li><br/>
+            <li><a class="effect-underline" target="_blank" href="https://www.chances4children.org/">Chances for Children</a></li><br/>  
+            <li><a class="effect-underline" target="_blank" href="https://coalitionforgreencapital.com/">Coalition for Green Capital</a></li><br/>   
+            <li><a class="effect-underline" target="_blank" href="https://poetrysociety.org/">Poetry Society of America</a></li><br/>  
+            <li><a class="effect-underline" target="_blank" href="https://www.northbrooklyncoalition.org/">North Brooklyn Coalition Against Family Violence</a></li><br/>
+            <li><a class="effect-underline" target="_blank" href="#">& More</a></li><br/> 
+          </ul>
+          
+        </div>
+      </div>
+    </div> 
+</main>
+
+
+
+
+
+
+  <footer class="pb-4">
+    <h3 style="margin:0px">Get In Touch</h3>
+    <p>Email or call us to schedule an appointment</p>
+    <p>Email: <strong>dbahl@asnyinc.com</strong></p>
+    <p>Phone: <strong>917-620-9702</strong></p>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+ <script>
+       $(document).ready(function(){
+      $('.sidenav').sidenav();
+  });
+
+ </script>
+</body>
+
+</html>
