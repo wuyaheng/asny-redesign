@@ -187,7 +187,8 @@ footer h3 {
             animation: fadein 1s ease-in; 
 }
 
-.companyName {
+
+.paragraph-landing {
   -webkit-animation: fadein 2s ease-in; 
        -moz-animation: fadein 2s ease-in;
         -ms-animation: fadein 2s ease-in; 
@@ -195,20 +196,12 @@ footer h3 {
             animation: fadein 2s ease-in; 
 }
 
-.paragraph-landing {
-  -webkit-animation: fadein 3s ease-in; 
-       -moz-animation: fadein 3s ease-in;
-        -ms-animation: fadein 3s ease-in; 
-         -o-animation: fadein 3s ease-in; 
-            animation: fadein 3s ease-in; 
-}
-
 .button-4 {
-  -webkit-animation: fadein 4s ease-in; 
-       -moz-animation: fadein 4s ease-in;
-        -ms-animation: fadein 4s ease-in; 
-         -o-animation: fadein 4s ease-in; 
-            animation: fadein 4s ease-in;  
+  -webkit-animation: fadein 2s ease-in; 
+       -moz-animation: fadein 2s ease-in;
+        -ms-animation: fadein 2s ease-in; 
+         -o-animation: fadein 2s ease-in; 
+            animation: fadein 2s ease-in;  
 }
 
 
@@ -251,6 +244,46 @@ footer h3 {
         height: 100vh;
     }
 
+}
+
+
+@keyframes fadeInUp {
+    from {
+        transform: translate3d(0,40px,0)
+    }
+
+    to {
+        transform: translate3d(0,0,0);
+        opacity: 1
+    }
+}
+
+@-webkit-keyframes fadeInUp {
+    from {
+        transform: translate3d(0,40px,0)
+    }
+
+    to {
+        transform: translate3d(0,0,0);
+        opacity: 1
+    }
+}
+
+.animated {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-fill-mode: both
+}
+
+.animatedFadeInUp {
+    opacity: 0
+}
+
+.fadeInUp {
+    opacity: 0;
+    animation-name: fadeInUp;
+    -webkit-animation-name: fadeInUp;
 }
 
 @media(min-width: 700px) {
@@ -392,7 +425,7 @@ footer h3 {
         </div>
       <div class="col-md-6 mt-3">
         <div class="intro-container">
-            <h4 class="mt-5 companyName" style="font-weight: 600;">Accounting Solutions</h4>
+            <h4 class="mt-5 companyName animated animatedFadeInUp fadeInUp" style="font-weight: 600;">Accounting Solutions</h4>
 
           <p class="paragraph-landing" style="line-height: 2em;">We Specialize In Accounting And CFO Services To Nonprofit Organizations and Charter Schools. We offer services on a full-time or part-time basis and empower clients with the financial tools needed to make the right decisions.</p>
 
