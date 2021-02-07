@@ -17,6 +17,17 @@
   <!-- Latest compiled and minified CSS & JS -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" href="https://cdn.glitch.com/0cc91850-cd5e-4827-a102-0ddee1243509%2Flogo.png?v=1601434289758"/>
+
+
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap-theme.min.css">
+  <script type="text/javascript" src="https://code.jquery.com/jquery.min.js"></script>
+  <script src="https://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+
+
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <script src="https://code.jquery.com/jquery.js"></script>
@@ -25,6 +36,9 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+ 
+
+  
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <script src="https://kit.fontawesome.com/a076d05399.js"></script>
   <link rel="stylesheet" href="font-awesome-animation.min.css">
@@ -129,17 +143,6 @@ main {
     text-align: justify;
 }
 
-
-footer {
-    text-align: center;
-    margin: auto;
-    color: #333;
-}
-
-footer h3 {
-    font-size: 3rem;
-    margin-bottom: 0;
-}
 
 .intro-container {
   padding: 3em;
@@ -344,7 +347,194 @@ i {
   color: #212529;
 }
 
+/* quote */
+.quote-image {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: auto;
+  padding-top: 60px;
+  width: 80px;
+}
 
+/* text-style */
+.testimonial-style .testimonial-caption-style {
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 24px;
+  color: #354052;
+  line-height: 30px;
+  bottom: 40%;
+  text-shadow: none;
+  top: 10%;
+}
+.testimonial-style .testimonial-authors {
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 20px;
+  color: #354052;
+  line-height: 30px;
+  margin-top: 40px;
+}
+/* carousel-height-control */
+.testimonial-style .carousel-inner > .item {
+  padding-top: auto;
+  padding-bottom: auto;
+  height: 250px;
+}
+/* carousel-left-right-control */
+.testimonial-style .carousel-control.left {
+  background: none;
+  box-shadow: none;
+  text-shadow: none;
+}
+.testimonial-style .carousel-control.right {
+  background: none;
+  box-shadow: none;
+  text-shadow: none;
+}
+.testimonial-style .carousel-control {
+  color: #354052;
+}
+.testimonial-style .carousel-control:hover {
+  color: #354052;
+  text-decoration: none;
+  transition: background-color 1s ease;
+}
+/* indicators */
+.testimonial-style .carousel-indicators .active {
+  background-color: #fff;
+  width: 14px;
+  height: 14px;
+  transition: background 1s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+.testimonial-style .carousel-indicators li {
+  border: 2px solid #354052;
+  background-color: #354052;
+}
+/* Textimonial CSS Code End */
+
+
+footer {
+  height: 250px;
+}
+
+footer a {
+  font-size: 14px;
+  transition-duration: 0.2s;
+}
+
+footer a:hover {
+  color: #FA944B;
+  text-decoration: none;
+}
+
+.copy {
+  font-size: 12px;
+  padding: 10px;
+}
+
+.footer-middle {
+  padding-top: 2em;
+  color: #212529;
+}
+
+
+/*SOCİAL İCONS*/
+
+/* footer social icons */
+
+ul.social-network {
+  list-style: none;
+  display: inline;
+  margin-left: 0 !important;
+  padding: 0;
+}
+
+ul.social-network li {
+  display: inline;
+  margin: 0 5px;
+}
+
+
+/* footer social icons */
+.social-network a.icoLinkedin:hover {
+  background-color: #007bb7;
+}
+
+
+.social-network a.icoLinkedin:hover i {
+  color: #fff;
+}
+
+.social-network a.socialIcon:hover,
+.socialHoverClass {
+  color: #44BCDD;
+}
+
+.social-circle li a {
+  display: inline-block;
+  position: relative;
+  margin: 0 auto 0 auto;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  text-align: center;
+  width: 30px;
+  height: 30px;
+  font-size: 15px;
+}
+
+@media only screen and (max-width: 768px) {
+  .social-circle li a {
+    display: inline-block;
+    position: relative;
+    margin: 0 auto 0 auto;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    text-align: center;
+    width: 25px;
+    height: 25px;
+    font-size: 14px;
+  }
+  .footer-middle {
+    padding-top: 0em;
+    padding: 0em;
+    margin-top: 0em;
+  }
+
+}
+.social-circle li i {
+  margin: 0;
+  line-height: 30px;
+  text-align: center;
+}
+
+.social-circle li a:hover i,
+.triggeredHover {
+  -moz-transform: rotate(360deg);
+  -webkit-transform: rotate(360deg);
+  -ms--transform: rotate(360deg);
+  transform: rotate(360deg);
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.social-circle i {
+  color: #595959;
+  -webkit-transition: all 0.8s;
+  -moz-transition: all 0.8s;
+  -o-transition: all 0.8s;
+  -ms-transition: all 0.8s;
+  transition: all 0.8s;
+}
+
+.social-network a {
+  background-color: #F9F9F9;
+}
   </style>
 </head>
 
@@ -404,9 +594,9 @@ i {
   <div class="row justify-content-center">
  <h6 style="color: #333333; font-weight: 700; font-size: 1.1rem; line-height: 3rem;">Our Mission is, "To ease the burden of accounting, record keeping, and fiscal reporting so that administrators can focus on program achievement."</h6>
   </div>
-        <div id="header">
+        <!-- <div id="header">
             <h4 style="margin: 1rem 0 1rem 0">About Us</h4>
-        </div>
+        </div> -->
 
         <div class="caption">
           <div class="container-fluid">
@@ -442,79 +632,84 @@ i {
 
       <div id="whatweoffer">
         <div id="header">
-          <h4 style="margin: 1rem 0 1rem 0">What We Offer</h4>
+          <h4 style="margin: 1rem 0 1rem 0">What Our Clients Say</h4>
       </div>
         <div class="container-fluid p-0 mb-5"> 
- 
-            <div class="row mt-4">
-                <div class="col-sm-4 text-center faa-parent animated-hover">
-                  <i class="fas fa-4x fa-laptop faa-pulse"></i>
-                  <p class="mt-3">Bookkeeping</p>
+          <div id="testimonial"> 
+            <!-- Carousel Start below -->
+            <div id="carousel1" class="carousel slide testimonial-style" data-ride="carousel" style="height: 250px;">
+    
+              <!-- Wrapper for slides -->
+              <div class="carousel-inner">
+                <div class="item active">
+                  <div class="carousel-caption testimonial-caption-style">
+                    <p>“Digant and his team have provided great support to our school. He has helped the board and our management to focus on the instruction piece of the school.”</p>
+                    <p class="testimonial-authors">-Steve Zimmerman, Treasurer, Academy of the City Charter School</p>
+                  </div>
                 </div>
-      
-        
-                <div class="col-sm-4 text-center faa-parent animated-hover">
-                  <i class="far fa-4x fa-newspaper faa-horizontal"></i>
-                  <p class="mt-3">Financial Reporting</p>
-                </div>
-
-                <div class="col-sm-4 text-center faa-parent animated-hover">
-        
-                  <i class="far fa-4x fa-calendar-check faa-float"></i>
-                  <p class="mt-3">Audit Preparation</p>
-                </div>
-              </div>
-
-              <div class="row mt-1 pt-1">
-                <div class="col-sm-4 text-center faa-parent animated-hover">
-                  <i class="fas fa-4x fa-poll faa-shake"></i>
-        
-                  <p class="mt-3">Budgeting and Forecasting</p>
-                </div>
-        
-                <div class="col-sm-4 text-center faa-parent animated-hover"> 
-                  <i class="fas fa-4x fa-cogs faa-tada"></i>
-                  <p class="mt-3">Accounting Software Setup and Maintenance</p>
-                </div>
-        
-                <div class="col-sm-4 text-center faa-parent animated-hover">
-                  <i class="fas fa-4x fa-pen-square faa-spin"></i> 
-                  <p class="mt-3">Chart of Accounts Design</p>
+                <div class="item">
+                  <div class="carousel-caption testimonial-caption-style">
+                    <p>“Digant and his team have provided great support to our school. He has helped the board and our management to focus on the instruction piece of the school.”</p>
+                    <p class="testimonial-authors">-Steve Zimmerman, Treasurer, Academy of the City Charter School</p>
+                  </div>
                 </div>
               </div>
-
-              <div class="row mt-1 pt-1 pb-4">
-                <div class="col-sm-4 text-center faa-parent animated-hover">
-                  <i class="fas fa-4x fa-calculator faa-ring"></i>
-                  <p class="mt-3">Chief Financial Officer</p>
-                </div>
-        
-                <div class="col-sm-4 text-center faa-parent animated-hover"> 
-                  <i class="fas fa-4x fa-user-shield faa-pulse"></i>
-                  <p class="mt-3">Internal Controls Design</p>
-                </div>
-        
-                <div class="col-sm-4 text-center faa-parent animated-hover">
-                  <i class="fas fa-4x fa-gavel faa-spin"></i>
-                  <p class="mt-3">Regulatory Compliance</p>
-                </div>
-              </div>
+          
+              <!-- Controls -->
+          
+              <a class="left carousel-control" href="#carousel1" data-slide="prev"> <span class="glyphicon glyphicon-chevron-left"></span> </a>
+              <a class="right carousel-control" href="#carousel1" data-slide="next"> <span class="glyphicon glyphicon-chevron-right"></span> </a>
+            </div>
+            
+            </div>
 
           </div>
         </div> 
     </div>
 </main>
-  <footer class="pb-4">
-    <h3 style="margin:0px">Get In Touch</h3>
-    <p>Email or call us to schedule an appointment</p>
-    <p>Email: <strong>dbahl@asnyinc.com</strong></p>
-    <p>Phone: <strong>917-620-9702</strong></p>
+
+<footer class="mainfooter" role="contentinfo">
+  <div class="footer-middle">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <!--Column1-->
+        <div class="footer-pad">
+          <h4>Get In Touch</h4>
+          <p><i class="fas fa-phone-alt"></i> 917-620-9702 &nbsp;&nbsp; <i class="far fa-envelope"></i> dbahl@asnyinc.com</p>
+      
+          <p><i class="fas fa-map-marker-alt"></i>  42 West 38th Street, Suite 705, New York, NY 10018</p>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <h4>Join Us</h4>
+            <ul class="social-network social-circle">
+             <li><a target="_blank" href="https://www.linkedin.com/company/asny/" class="icoLinkedin" title="Linkedin"><i class="fab fa-1x fa-linkedin-in"></i></a></li>
+            </ul>				
+    </div>
+    </div>
+  <div class="row m-0 p-0">
+    <div class="col-md-12 copy">
+      <p class="text-center">&copy; 2021 Accounting Solutions</p>
+    </div>
+  </div>
+
+
+  </div>
+  </div>
 </footer>
+
+
+
 
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+
+<script src='http://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js'></script>
 
  <script>
        $(document).ready(function(){
